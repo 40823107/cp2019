@@ -3,21 +3,74 @@
 <p><span>你是在哈囉嗎?</span></p>
 <p><img alt="" height="161" src="/images/images.jpg" width="313"/></p>
 <h1>Hello World</h1>
+<p><a href="https://mde.tw/dartpad/?id=2bd023d70d6e6f340ae2ace62e011c25">https://mde.tw/dartpad/?id=2bd023d70d6e6f340ae2ace62e011c25</a></p>
+<p>gist:</p>
+<p><a href="https://gist.github.com/40823107/2bd023d70d6e6f340ae2ace62e011c25">https://gist.github.com/40823107/2bd023d70d6e6f340ae2ace62e011c25</a></p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main() {
+ print("你是在哈囉? ");
+}</pre>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=2bd023d70d6e6f340ae2ace62e011c25" width="800"></iframe>dartpad:</p>
 <p>dartpad:</p>
 <p><a href="https://mde.tw/dartpad/?id=a3ed7f5db09348be4665fe3e76002dcc">https://mde.tw/dartpad/?id=a3ed7f5db09348be4665fe3e76002dcc</a></p>
-<p>git:</p>
+<p>gist:</p>
 <p><a href="https://gist.github.com/40823107/a3ed7f5db09348be4665fe3e76002dcc">https://gist.github.com/40823107/a3ed7f5db09348be4665fe3e76002dcc</a></p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main() {
   for (int i = 0; i &lt; 5; i++) {
   print('hello $i');
  }
- print("你是在哈囉? 1");
- print("你是在哈囉? 2");
- print("你是在哈囉? 3");
- print("你是在哈囉? 4");
+ print("你是在哈囉? ");
+}
+</pre>
+<p></p>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=a3ed7f5db09348be4665fe3e76002dcc" width="800"></iframe>dartpad:</p>
+<p><a href="https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98">https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98</a></p>
+<p>gist:</p>
+<p><a href="https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98">https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98</a></p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">import 'dart:html';
+
+void main() {
+  // 每一組 10 人
+  int num = 10;
+  // 組序由 1 開始
+  int gth = 1;
+  // 迴圈序號變數
+  int i;
+  // 每組學員暫存數列
+  var gp_list = [];
+  // 全班分組數列
+  var cp2019 = [];
+
+  HttpRequest.getString(
+          'https://mde.tw/cp2019/downloads/2019fall_cp_1a_list.txt')
+      .then((String resp) {
+    // 利用 trim() 去除字串最後的跳行符號, 之後再利用 split() 根據 \n 轉為數列
+    var stud_list = resp.trim().split("\n");
+    // 數列利用 shuffle() 方法以隨機方法弄亂順序
+    stud_list.shuffle();
+    // 逐一讀取已經弄亂的學生學號數列, 利用模數運算每幾人分成一組
+    for (i = 0; i &lt; stud_list.length; i++) {
+      // 0, 1~(num-1), num
+      if (i % num == 0) {
+        gp_list = [];
+        // 列印區隔符號
+        print('=' * 20);
+        print("group $gth :");
+        print(stud_list[i]);
+        // 在各分組數列中加入將對應的學員學號
+        gp_list.add(stud_list[i]);
+        gth = gth + 1;
+      } else {
+        print(stud_list[i]);
+        // 在各分組數列中加入將對應的學員學號
+        gp_list.add(stud_list[i]);
+      }
+      if (i % num == 0) {
+        // 逐步將各組暫存的分組數列加入全班分組數列中
+        cp2019.add(gp_list);
+      }
+    }
+    // 列出全班分組數列
+    print(cp2019);
+  });
 }</pre>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=a3ed7f5db09348be4665fe3e76002dcc" width="800"></iframe></p>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=926c6e88742b424d61fdbb99cc101b98" width="800"></iframe></p>
