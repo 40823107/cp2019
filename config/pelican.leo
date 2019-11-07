@@ -58,8 +58,9 @@
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2019</vh>
 <v t="leo.20180423103639.1"><vh>2019 Fall CP 課程</vh>
-<v t="launchLeo-py.20191107234552.1"><vh>@edit cp2019 期中考報告.md</vh></v>
+<v t="launchLeo-py.20191107234552.1"><vh>@edit cp2019 期中考報告.md</vh>
 <v t="leo.20180423103656.1"><vh>@edit 20191031.md</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -69,6 +70,11 @@
 <v t="yen.20170108171939.1"><vh>@button ipv6 https server</vh></v>
 </vnodes>
 <tnodes>
+<t tx="launchLeo-py.20191107234552.1">@language md
+---
+期中考報告
+----
+&lt;p&gt;&lt;iframe width="560" height="314" allowfullscreen="allowfullscreen" src="https://youtu.be/Exwm3h6yJVw"&gt;&lt;/ifarme&gt;&lt;/p&gt;</t>
 <t tx="leo.20170709015940.1"></t>
 <t tx="leo.20170709015947.1"></t>
 <t tx="leo.20170709020600.1"></t>
