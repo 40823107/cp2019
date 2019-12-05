@@ -99,52 +99,34 @@ fun1(){
 <p><span>攝氏轉華氏</span><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=65ff69e2dae4909813fc37cc407bf66b&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
 <p><span>華氏轉攝氏</span><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=343077b8ab0ac505dce451b8a1511555&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
 <h2><strong>Javascript 建立按鈕</strong></h2>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
 <p><button onclick="getDart('temperature')">temperature</button></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><iframe gt="" height="600" id="iframe" iframe="" p="" src="/https:/dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/temperature&amp;theme=dark" width="800">
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">int x = 0;
-num F = 86;
-num C = 30;
-
-void main(){
-  if (x == 0) {
-  num F2 = C*9/5+32;
-			print('F=$F2');
-  }
-  else{
-    if (x==1){
-    num C2 = (F-32)*5/9;
-			print('C=$C2');
-  }
-
-  }
-    print('x=0,1切換(華氏、攝氏)');</pre>
-<br/>Ｗ8 &lt;&lt; <a href="Ｗ8.html">Previous</a> <a href="image.html">Next</a> &gt;&gt; image
-        
-    <!-- footer -->
-<div class="container">
-<div class="row pt-3 mx-auto">
-<p>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright ©document.write(new Date().getFullYear()); All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
-</div>
-</div>
-<!-- for footer -->
-<!-- for site wrap -->
-<!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
-<!--
-            <script src="../cmsimde/static/chimper/js/typed.js"></script>
-                    <script>
-                    var typed = new Typed('.typed-words', {
-                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
-                    typeSpeed: 80,
-                    backSpeed: 80,
-                    backDelay: 4000,
-                    startDelay: 1000,
-                    loop: true,
-                    showCursor: true
-                    });
-                    </script>
-            --></iframe></p>
+</pre></iframe></p>
