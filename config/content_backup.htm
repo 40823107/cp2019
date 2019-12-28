@@ -153,38 +153,28 @@ var typed = new Typed('.typed-words', {
 <p></p>
 <script>
 function getDart(dirname){
-    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
-}
-
-function getHtmlDart(dirname){
-    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
-document.getElementById("iframe").src = source ;
-}
-
-function getFlutter(dirname){
-    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
-document.getElementById("iframe").src = source ;
 }
 
 function largest(){
 document.getElementById("iframe").width = document.body.clientWidth ;
 document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
 }
-
 function original(){
-document.getElementById("iframe").width = 800 ;
-document.getElementById("iframe").height = 600 ;
+document.getElementById("iframe").width = 1200 ;
+document.getElementById("iframe").height = 800 ;
+}ument.getElementById("iframe").height = 600 ;
 }
 </script>
 <!-- 取 Dart 程式的按鈕 -->
 <h4>純 Dart 程式</h4>
-<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getDart('function')">Function</button> <button onclick="getDart('fun_parameter')">Function Parameter</button> <button onclick="getDart('fat_arrow')">Fat Arrow</button> <button onclick="getDart('temp1')">Temp 1</button></p>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button></p>
 <h4>Html 程式</h4>
-<p><button onclick="getHtmlDart('random_grouping')">亂數分組</button> <button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('rotROC')">rot ROC</button> <button onclick="getHtmlDart('usaflag')">USA Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('html_tetris')">Tetris</button></p>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('rotROC')">rot ROC</button> <button onclick="getHtmlDart('usaflag')">USA Flag</button></p>
 <h4>Flutter 程式</h4>
-<p><button onclick="getFlutter('flutter0')">Flutter0</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button> <button onclick="getFlutter('flutter4')">Flutter4</button> <button onclick="getFlutter('flutter_counter')">Flutter Counter</button> <button onclick="getFlutter('flutter_roc')">ROC Flag</button> <button onclick="getFlutter('flutter_mine1')">踩地雷 1</button> <button onclick="getFlutter('flutter_mine2')">踩地雷 2</button> <button onclick="getFlutter('flutter_mine3')">踩地雷 3</button> <button onclick="getFlutter('flutter_mine4')">踩地雷 4</button> <button onclick="getFlutter('flutter_dropdown')">Dropdown</button> <button onclick="getFlutter('flutter_multiselect')">Multiselect</button> <button onclick="getFlutter('flutter_search')">Search</button> <button onclick="getFlutter('flutter_login')">Login</button> <button onclick="getFlutter('flutter_temp')">溫度轉換</button> <button onclick="getFlutter('flutter_ttt')">Tic-Tac-Toe</button> <button onclick="getFlutter('flutter_calculator')">Calculator</button> <button onclick="getFlutter('flutter_mouse1')">Mouse1</button> <button onclick="getFlutter('flutter_paint1')">Paint1</button></p>
+<p><button onclick="getFlutter('flutter_temp')">溫度轉換</button></p>
 <!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
 <p><a href="https://github.com/thatisuday/dart-getting-started-guide">https://github.com/thatisuday/dart-getting-started-guide</a></p>
