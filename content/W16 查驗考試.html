@@ -156,18 +156,31 @@ img.add_border {
         </header>
     <div id="tipue_search_content">Javascript 建立按鈕 << <a href='Javascript 建立按鈕.html'>Previous</a> <a href='連線手機.html'>Next</a> >> 連線手機<br /><h1>W16 查驗考試</h1>
 <p></p>
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
 <script>
 function getDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
 }
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
 function largest(){
 document.getElementById("iframe").width = document.body.clientWidth ;
 document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
 }
+
 function original(){
-document.getElementById("iframe").width = 1200 ;
-document.getElementById("iframe").height = 800 ;
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
 }
 </script>
 <!-- 取 Dart 程式的按鈕 -->
@@ -179,22 +192,7 @@ document.getElementById("iframe").height = 800 ;
 <p><button onclick="getFlutter('temperature')">temperature</button></p>
 <!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe amp="" br="" dart_ex="" gh_owner='40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/hello&amp;theme=dark"' gt="" height="800" id="iframe" p="" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/hello&amp;theme=dark" theme='dark"' width="1200">temperature &lt;&lt; <a href="/get_page/Javascript%20%E5%BB%BA%E7%AB%8B%E6%8C%89%E9%88%95/華氏、攝氏的轉換.html">Previous</a>
-<!-- footer -->
-<div class="container">
-<div class="row pt-3 mx-auto">
-<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright ©
-
-document.write(new Date().getFullYear());
-
-All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div></div></iframe></p>
-<!-- for footer -->
-<p></p>
-<!-- for site wrap -->
-<p></p>
-<!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
-<p>&lt;!--</p>
-<p>var typed = new Typed('.typed-words', { strings: ["Web Apps"," WordPress"," Mobile Apps"], typeSpeed: 80, backSpeed: 80, backDelay: 4000, startDelay: 1000, loop: true, showCursor: true });</p><br />Javascript 建立按鈕 << <a href='Javascript 建立按鈕.html'>Previous</a> <a href='連線手機.html'>Next</a> >> 連線手機</div>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/mass_spring_damping&amp;theme=dark" width="800"></iframe></p><br />Javascript 建立按鈕 << <a href='Javascript 建立按鈕.html'>Previous</a> <a href='連線手機.html'>Next</a> >> 連線手機</div>
         
     <!-- footer -->
       <div class="container">
