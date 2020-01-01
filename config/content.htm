@@ -149,7 +149,7 @@ var typed = new Typed('.typed-words', {
                     });</iframe></p>
 <h1>W16 查驗考試</h1>
 <p></p>
-<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex1/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
 <script>
 function getDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
@@ -178,9 +178,9 @@ document.getElementById("iframe").height = 600 ;
 </script>
 <!-- 取 Dart 程式的按鈕 -->
 <h4>純 Dart 程式</h4>
-<p><button onclick="getDart('Hello')">Hello</button> <button onclick="getDart('For Loop')">For Loop</button> <button onclick="getDart('sum')">Sum</button></p>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('For Loop')">For Loop</button> <button onclick="getDart('sum')">Sum</button></p>
 <h4>Html 程式</h4>
-<p><button onclick="getHtmlDart('ROC Flag')">ROC Flag</button> <button onclick="getHtmlDart('rot ROC')">rot ROC</button> <button onclick="getHtmlDart('USA Flag')">USA Flag</button></p>
+<p><button onclick="getHtmlDart('ROC Flag')">ROC Flag</button> <button onclick="getHtmlDart('rot ROC')">rot ROC</button> <button onclick="getHtmlDart('USA Flag')">USA Flag</button> <button onclick="getHtmlDart('slithery')">Slithery</button><button onclick="getHtmlDart('html_tetris')">Tetris</button></p>
 <h4>Flutter 程式</h4>
 <p><button onclick="getFlutter('temperature')">temperature</button></p>
 <!-- 內建放入的 Dart 原始碼 -->

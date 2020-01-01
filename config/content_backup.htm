@@ -149,30 +149,43 @@ var typed = new Typed('.typed-words', {
                     });</iframe></p>
 <h1>W16 查驗考試</h1>
 <p></p>
+<!-- 透過 getDart(dirname) 取位於 downloads/dart_ex1/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
 <script>
 function getDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
 }
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
 function largest(){
 document.getElementById("iframe").width = document.body.clientWidth ;
 document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
 }
+
 function original(){
-document.getElementById("iframe").width = 1200 ;
-document.getElementById("iframe").height = 800 ;
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
 }
 </script>
 <!-- 取 Dart 程式的按鈕 -->
 <h4>純 Dart 程式</h4>
-<p><button onclick="getDart('Hello')">Hello</button> <button onclick="getDart('For Loop')">For Loop</button> <button onclick="getDart('sum')">Sum</button></p>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('For Loop')">For Loop</button> <button onclick="getDart('sum')">Sum</button></p>
 <h4>Html 程式</h4>
 <p><button onclick="getHtmlDart('ROC Flag')">ROC Flag</button> <button onclick="getHtmlDart('rot ROC')">rot ROC</button> <button onclick="getHtmlDart('USA Flag')">USA Flag</button></p>
 <h4>Flutter 程式</h4>
 <p><button onclick="getFlutter('temperature')">temperature</button></p>
 <!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p><h2>連線手機</h2>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/mass_spring_damping&amp;theme=dark" width="800"></iframe></p><h2>連線手機</h2>
 <h4></h4>
 <p></p>
 <p></p>
