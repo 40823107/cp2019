@@ -154,11 +154,42 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content"> <a href='W7迴圈.html'>Next</a> >> W7迴圈<br /><h1>About</h1>
-<p><a href="https://40823107.github.io/cp2019">https://40823107.github.io/cp2019</a><span>  </span></p>
-<p><span>你是在哈囉嗎?</span></p>
-<p><img alt="" height="161" src="./../images/images.jpg" width="313"/></p>
-<br /> <a href='W7迴圈.html'>Next</a> >> W7迴圈</div>
+    <div id="tipue_search_content">Dartpad << <a href='Dartpad.html'>Previous</a> <br /><h1>W17 考試</h1>
+<p></p>
+<p><!-- 透過 getDart(dirname) 取位於 downloads/dart_ex1/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex1/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 --></p>
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('重量轉換dart')">重量轉換dart</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('weight')">重量轉換html</button></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/重量轉換dart&amp;theme=dark" width="800"></iframe></p><br />Dartpad << <a href='Dartpad.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
