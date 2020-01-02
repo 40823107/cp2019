@@ -108,6 +108,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -153,4 +154,75 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='W7迴圈.html'>W7迴圈</a><ul><li><a href='For Loop.html'>For Loop</a><li><a href='分組.html'>分組</a><li><a href='sum.html'>sum</a><li><a href='阻尼圖表.html'>阻尼圖表</a></li></ul><li><a href='Temperature.html'>Temperature</a><ul><li><a href='Javascript 建立按鈕.html'>Javascript 建立按鈕</a></li></ul><li><a href='W16 查驗考試.html'>W16 查驗考試</a><ul><li><a href='Dartpad.html'>Dartpad</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">W7迴圈 << <a href='W7迴圈.html'>Previous</a> <a href='分組.html'>Next</a> >> 分組<br /><h1>For Loop</h1>
+<p><span>dartpad:</span><a href="https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98">https://mde.tw/dartpad/?id=981d04328b0e401c08c1d242f26a2392</a></p>
+<p><span>gist:</span><a href="https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98">https://gist.github.com/40823107/</a><a href="https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98">981d04328b0e401c08c1d242f26a2392</a><a href="https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98"></a></p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">// 在所有函式定義外圍所宣告的變數, 稱為全域變數, 有效範圍包含各函式內部與外部
+// for 迴圈所使用的索引值, 宣告為整數 (integer)
+int i;
+// 累加起始值 start 宣告為整數, 且設為 1
+int start = 1;
+// 累加終止值 end 宣告為整數, 且設為 10
+int end = 10;
+// 累加總數值 sum 宣告為整數
+int sum;
+
+// 定義 main() 主函式內容, 目的在利用 for 迴圈進行整數的累加
+main(){
+  // 將前面已經宣告為全域整數的變數 sum 設為 0, 表示從 0 開始進行累加
+  sum = 0;
+  // 執行 for 迴圈內的整數累加設計, 使用前面已經宣告為全域整數的 i 作為索引變數
+  // 分別從 start 開始累加至 end, 且每次迴圈的索引值增加 1
+  for(i=start;i &lt;= end ;i++){
+    // 當索引變數 i 所對應的值小於或等於 end 時, 對 sum 變數加上 i
+    sum += i;
+    // 可以在 for 迴圈每一個階段運算時, 列出當時的 sum 對應值, 查驗是否正確
+    //print("$sum");
+  }
+  // for 迴圈累加完成後, 列出最後訊息
+  print('從 $start 累加至 $end 的總數值為 $sum');
+}</pre>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=981d04328b0e401c08c1d242f26a2392" width="800"></iframe></p>
+<br />W7迴圈 << <a href='W7迴圈.html'>Previous</a> <a href='分組.html'>Next</a> >> 分組</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        

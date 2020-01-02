@@ -108,6 +108,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -153,4 +154,97 @@ img.add_border {
           </div>
           
         </header>
-    </nav><section><h1>Site Map</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='W7迴圈.html'>W7迴圈</a><ul><li><a href='For Loop.html'>For Loop</a><li><a href='分組.html'>分組</a><li><a href='sum.html'>sum</a><li><a href='阻尼圖表.html'>阻尼圖表</a></li></ul><li><a href='Temperature.html'>Temperature</a><ul><li><a href='Javascript 建立按鈕.html'>Javascript 建立按鈕</a></li></ul><li><a href='W16 查驗考試.html'>W16 查驗考試</a><ul><li><a href='Dartpad.html'>Dartpad</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">For Loop << <a href='For Loop.html'>Previous</a> <a href='sum.html'>Next</a> >> sum<br /><h1>分組</h1>
+<p>dartpad:<a href="https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98">https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98</a></p>
+<p>gist:<a href="https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98">https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98</a></p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">import 'dart:html';
+
+void main() {
+  // 每一組 10 人
+  int num = 10;
+  // 組序由 1 開始
+  int gth = 1;
+  // 迴圈序號變數
+  int i;
+  // 每組學員暫存數列
+  var gp_list = [];
+  // 全班分組數列
+  var cp2019 = [];
+
+  HttpRequest.getString(
+          'https://mde.tw/cp2019/downloads/2019fall_cp_1a_list.txt')
+      .then((String resp) {
+    // 利用 trim() 去除字串最後的跳行符號, 之後再利用 split() 根據 \n 轉為數列
+    var stud_list = resp.trim().split("\n");
+    // 數列利用 shuffle() 方法以隨機方法弄亂順序
+    stud_list.shuffle();
+    // 逐一讀取已經弄亂的學生學號數列, 利用模數運算每幾人分成一組
+    for (i = 0; i &lt; stud_list.length; i++) {
+      // 0, 1~(num-1), num
+      if (i % num == 0) {
+        gp_list = [];
+        // 列印區隔符號
+        print('=' * 20);
+        print("group $gth :");
+        print(stud_list[i]);
+        // 在各分組數列中加入將對應的學員學號
+        gp_list.add(stud_list[i]);
+        gth = gth + 1;
+      } else {
+        print(stud_list[i]);
+        // 在各分組數列中加入將對應的學員學號
+        gp_list.add(stud_list[i]);
+      }
+      if (i % num == 0) {
+        // 逐步將各組暫存的分組數列加入全班分組數列中
+        cp2019.add(gp_list);
+      }
+    }
+    // 列出全班分組數列
+    print(cp2019);
+  });
+}</pre>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=926c6e88742b424d61fdbb99cc101b98" width="800"></iframe></p>
+<br />For Loop << <a href='For Loop.html'>Previous</a> <a href='sum.html'>Next</a> >> sum</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
