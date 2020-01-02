@@ -3,7 +3,7 @@
 <p><span>你是在哈囉嗎?</span></p>
 <p><img alt="" height="161" src="/images/images.jpg" width="313"/></p>
 <h1>W7迴圈</h1>
-<h2>哈囉</h2>
+<p>Hello</p>
 <p>dartpad:<a href="https://mde.tw/dartpad/?id=2bd023d70d6e6f340ae2ace62e011c25">https://mde.tw/dartpad/?id=2bd023d70d6e6f340ae2ace62e011c25</a></p>
 <p>gist:<a href="https://gist.github.com/40823107/2bd023d70d6e6f340ae2ace62e011c25">https://gist.github.com/40823107/2bd023d70d6e6f340ae2ace62e011c25</a></p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main() {
@@ -21,6 +21,35 @@
 </pre>
 <p></p>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=a3ed7f5db09348be4665fe3e76002dcc" width="800"></iframe></p>
+<h2>For Loop</h2>
+<p><span>dartpad:</span><a href="https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98">https://mde.tw/dartpad/?id=981d04328b0e401c08c1d242f26a2392</a></p>
+<p><span>gist:</span><a href="https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98">https://gist.github.com/40823107/</a><a href="https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98">981d04328b0e401c08c1d242f26a2392</a><a href="https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98"></a></p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">// 在所有函式定義外圍所宣告的變數, 稱為全域變數, 有效範圍包含各函式內部與外部
+// for 迴圈所使用的索引值, 宣告為整數 (integer)
+int i;
+// 累加起始值 start 宣告為整數, 且設為 1
+int start = 1;
+// 累加終止值 end 宣告為整數, 且設為 10
+int end = 10;
+// 累加總數值 sum 宣告為整數
+int sum;
+
+// 定義 main() 主函式內容, 目的在利用 for 迴圈進行整數的累加
+main(){
+  // 將前面已經宣告為全域整數的變數 sum 設為 0, 表示從 0 開始進行累加
+  sum = 0;
+  // 執行 for 迴圈內的整數累加設計, 使用前面已經宣告為全域整數的 i 作為索引變數
+  // 分別從 start 開始累加至 end, 且每次迴圈的索引值增加 1
+  for(i=start;i &lt;= end ;i++){
+    // 當索引變數 i 所對應的值小於或等於 end 時, 對 sum 變數加上 i
+    sum += i;
+    // 可以在 for 迴圈每一個階段運算時, 列出當時的 sum 對應值, 查驗是否正確
+    //print("$sum");
+  }
+  // for 迴圈累加完成後, 列出最後訊息
+  print('從 $start 累加至 $end 的總數值為 $sum');
+}</pre>
+<p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=981d04328b0e401c08c1d242f26a2392" width="800"></iframe></p>
 <h2>分組</h2>
 <p>dartpad:<a href="https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98">https://mde.tw/dartpad/?id=926c6e88742b424d61fdbb99cc101b98</a></p>
 <p>gist:<a href="https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98">https://gist.github.com/40823107/926c6e88742b424d61fdbb99cc101b98</a></p>
@@ -97,9 +126,10 @@ fun1(){
 <h1>Temperature</h1>
 <p>華氏、攝氏的轉換</p>
 <p></p>
-<p><span>攝氏轉華氏</span><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=65ff69e2dae4909813fc37cc407bf66b&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
-<p><span>華氏轉攝氏</span><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=343077b8ab0ac505dce451b8a1511555&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
-<h2>Javascript 建立按鈕</h2>
+<p><span>攝氏轉華氏</span></p>
+<p><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=65ff69e2dae4909813fc37cc407bf66b&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
+<p><span>華氏轉攝氏</span></p>
+<p><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=343077b8ab0ac505dce451b8a1511555&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p><h2>Javascript 建立按鈕</h2>
 <p>
 <script>
 function getDart(dirname){
@@ -183,12 +213,9 @@ document.getElementById("iframe").height = 600 ;
 <p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('For Loop')">For Loop</button> <button onclick="getDart('sum')">Sum</button></p>
 <h4>Html 程式</h4>
 <p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('rotROC')">rot ROC</button> <button onclick="getHtmlDart('USA Flag')">USA Flag</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('html_tetris')">Tetris</button></p>
-<h4>Flutter 程式</h4>
-<p><button onclick="getFlutter('temperature')">temperature</button></p>
 <p><!-- 內建放入的 Dart 原始碼 --></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
-<h2>Dartpad</h2>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/mass_spring_damping&amp;theme=dark" width="800"></iframe></p><h2>Dartpad</h2>
 <h4></h4>
 <p></p>
 <p></p>

@@ -126,9 +126,27 @@ fun1(){
 <h1>Temperature</h1>
 <p>華氏、攝氏的轉換</p>
 <p></p>
-<p><span>攝氏轉華氏</span><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=65ff69e2dae4909813fc37cc407bf66b&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
-<p><span>華氏轉攝氏</span><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=343077b8ab0ac505dce451b8a1511555&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
-<h2>Javascript 建立按鈕</h2>
+<p><span>攝氏轉華氏</span></p>
+<p><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=65ff69e2dae4909813fc37cc407bf66b&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">//在F設置攝氏溫度
+int F=0;
+  num C=F*(9/5)+32;
+  num G=F*C;
+  
+  main(){
+  print ("攝氏$F度等於華氏$C度");
+}</pre>
+<p><span>華氏轉攝氏</span></p>
+<p><iframe height="600" src="https://dartpad.dartlang.org/embed-dart.html?id=343077b8ab0ac505dce451b8a1511555&amp;gh_path=downloads/dart_ex/for&amp;theme=dark" width="800"></iframe></p>
+<pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">//在F設置攝氏溫度
+int F=0;
+  num C=F*(9/5)+32;
+  num G=F*C;
+  
+  main(){
+  print ("攝氏$F度等於華氏$C度");
+}</pre>
+<p></p><h2>Javascript 建立按鈕</h2>
 <p>
 <script>
 function getDart(dirname){
@@ -212,12 +230,9 @@ document.getElementById("iframe").height = 600 ;
 <p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('For Loop')">For Loop</button> <button onclick="getDart('sum')">Sum</button></p>
 <h4>Html 程式</h4>
 <p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('rotROC')">rot ROC</button> <button onclick="getHtmlDart('USA Flag')">USA Flag</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('html_tetris')">Tetris</button></p>
-<h4>Flutter 程式</h4>
-<p><button onclick="getFlutter('temperature')">temperature</button></p>
 <p><!-- 內建放入的 Dart 原始碼 --></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
-<h2>Dartpad</h2>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/mass_spring_damping&amp;theme=dark" width="800"></iframe></p><h2>Dartpad</h2>
 <h4></h4>
 <p></p>
 <p></p>
