@@ -1,12 +1,12 @@
-  html，正文 {
-  寬度： 100 ％ ;
-  高度： 100 ％ ;
-  邊距： 0 ;
-  填充： 0 ;
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #wrapper {
-  寬度： 300 像素 ;
-  保證金：自動 ;
-  邊框：黑色實 心細  ;
+  width: 300px;
+  margin: auto;
+  border: solid thin black;
 }

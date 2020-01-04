@@ -156,14 +156,10 @@ img.add_border {
         </header>
     <div id="tipue_search_content">Dartpad << <a href='Dartpad.html'>Previous</a> <br /><h1>W17 考試</h1>
 <h4>2D 幾何圖形繪(國旗(Javascript))</h4>
-<p><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button> <button id="JP">Draw JP</button> <button id="Russia">Draw Russia</button> <button id="ROC">Draw ROC</button> <button id="France">Draw France</button> <button id="Germany">Draw Germany</button> <button id="Netherlands">Draw Netherlands</button> <button id="UK">Draw UK</button></p>
+<p><canvas height="200" id="canvas" width="300"></canvas> <button id="button">Clear Canvas</button></p>
+<p><button id="JP">Draw JP</button> <button id="Russia">Draw Russia</button> <button id="ROC">Draw ROC</button> <button id="France">Draw France</button> <button id="Germany">Draw Germany</button> <button id="Netherlands">Draw Netherlands</button> <button id="UK">Draw UK</button></p>
 <p></p>
 <script src="/get_page/downloads/dart_ex/Flag/Flag.js"></script>
-<h4>重量單位轉換程式設計(Javascript)</h4>
-<p>請輸入所要轉換的溫度<br/>以數字加上 kg 或 lb:<br/><br/><input id="temp" max="30" min="1" type="text" value="20kg"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
-<p></p>
-<script src="/get_page/downloads/dart_ex/重量轉換/weight.js"></script>
-<p>
 <script>
 function getDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823107&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
@@ -190,7 +186,6 @@ document.getElementById("iframe").width = 800 ;
 document.getElementById("iframe").height = 600 ;
 }
 </script>
-</p>
 <p></p>
 <p><!-- 透過 getDart(dirname) 取位於 downloads/dart_ex1/ 目錄中 dirname 目錄中的 Dart 程式碼 -->
 <script>
@@ -225,7 +220,12 @@ document.getElementById("iframe").height = 600 ;
 <h4>Html 程式</h4>
 <p><button onclick="getHtmlDart('重量轉換')">重量轉換html</button></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
-<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/重量轉換dart&amp;theme=dark" width="800"></iframe></p><br />Dartpad << <a href='Dartpad.html'>Previous</a> </div>
+<p><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823107&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex1/重量轉換dart&amp;theme=dark" width="800"></iframe></p>
+<h4>重量單位轉換程式設計(Javascript)</h4>
+<p>請輸入所要轉換的溫度<br/>以數字加上 kg 或 lb:<br/><br/><input id="temp" max="30" min="1" type="text" value="20kg"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
+<p></p>
+<script src="/get_page/downloads/dart_ex/重量轉換/weight.js"></script>
+<p></p><br />Dartpad << <a href='Dartpad.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
